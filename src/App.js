@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+import logo from './assets/logo.png'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="cont container-fluid">
+        <main className="main">
+            <img className="logo" src={logo} alt="logo apozem" />
+            <p className="subtitle">Coming soon...</p>
+        </main>
+        <footer className="footer">
+         <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} />
+        </footer>
+
+           
     </div>
+       
+    
+
   );
 }
 
