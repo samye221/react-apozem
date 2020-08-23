@@ -10,12 +10,16 @@ body{
     height: 100vh;
     font-family: 'FuturaMedium';
     font-size: 0.75rem;
+    background-color: #f7f3f0;
+
 }
 
 .main {
-    background-color: #f7f3f0;
+    margin: auto;
+}
+
+.title {
     display: flex;
-    height: 85%;
     flex-direction: column;
     align-items: center;
 }
@@ -31,8 +35,7 @@ body{
 
 .footer {
     height: 15%;
-    background-color: #aeceaf;
-    color: #f7f3f0;
+    background-color: #c9d6c9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,9 +43,10 @@ body{
 .form {
     display: flex;
     flex-direction: row;
-    background-color: #aeceaf;
+    background-color: #c9d6c9;
     width: 80vw;
     justify-content: center;
+    align-items: center;
     font-size: 0.75rem;
 
 }
@@ -51,20 +55,50 @@ body{
     width: 50%;
     display: flex;
     justify-content: center;
-    background-color: #aeceaf !important;
+    background-color: #c9d6c9 !important;
 
 }
 
 input {
-    background-color: #aeceaf;
-    border-bottom-color: #f7f3f0 !important;
-    border-bottom-width: 1px;
+    background-color: #c9d6c9;
+    border-bottom: none;
     border-left: none;
     border-top: none;
     border-right: none;
     width: 30vw;
 }
 
+input::placeholder {
+    color: #535353;
+    font-family: 'FuturaMedium';
+    font-size: 0.75rem;
+}
+.input:focus {
+    outline: none;
+}
+
 button {
-    display: none;
+    background-color: #c9d6c9;
+    border: none
+}
+
+.submit {
+    border-bottom: solid;
+    border-bottom-color: #535353;
+    border-bottom-width: 0.8px;
+    padding-bottom: 7px;
+}
+
+.submitIcon {
+    background-color: #c9d6c9;
+    width: 14px;
+}
+
+.label {
+    margin-right: 20px;
+    color: #535353;
+    font-family: 'FuturaMedium';
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+    font-weight: bolder
 }
