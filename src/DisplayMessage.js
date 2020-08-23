@@ -1,5 +1,6 @@
 import React from "react";
 import { SharedContext } from "./Shared";
+import './App.css';
 
 export default function DisplayMessage() {
   const [sharedState] = React.useContext(SharedContext);
@@ -8,7 +9,7 @@ export default function DisplayMessage() {
   }
   const { status, message } = sharedState;
   return (
-    <div>
+    <div className="message">
       {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
       {status === "error" && (
         <div

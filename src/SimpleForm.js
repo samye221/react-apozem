@@ -27,7 +27,7 @@ const SimpleForm = ({ status, message, className, style, onSubmitted }) => {
 					placeholder="e-mail"
 					className="input"
 				/>
-				<button onClick={submit}><img className="submitIcon" src={arrow} /></button>
+				<button className="btn" onClick={submit}><img className="submitIcon" src={arrow} /></button>
 			</div>
       
     </div>

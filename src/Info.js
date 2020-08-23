@@ -26,8 +26,8 @@ function MyMailchimpSubscribe() {
 function Info() {
   return (
     <SharedProvider>
-      <DisplayMessage />
       <MyMailchimpSubscribe />
+      <DisplayMessage />
     </SharedProvider>
   );
 }
